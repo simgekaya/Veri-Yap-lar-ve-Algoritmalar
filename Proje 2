@@ -1,1 +1,25 @@
+[16,21,11,8,12,22] -> Merge Sort
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız. 
 
+=> İlk olarak dizi, ikiye bölünür. 
+
+    16,21,11,8,12,22
+    İkiye bölünür:
+    16,21,11    8,12,22
+    Tek eleman kalana kadar ikiye bölme işlemi devam eder.
+    16,21  11   8   12,22
+    16   21   11   8   12   22 => Tek elemanlı hale geldi.
+    İkili şekilde birleştirilir:
+    16,21    11   8   12,22
+    Sıralı olana kadar birleştirme işlemi devam eder.
+    11,16,21   8,12,22
+    8,11,12,16,21,22
+   
+    8,11,12,16,21,22 => Dizimizi sıralı hale getirmiş olduk.
+    
+    Big-O gösterimini yazınız.
+    
+    Big-O= O(nlogn)
+    
+    www.patika.dev
+    https://www.patika.dev/tr
