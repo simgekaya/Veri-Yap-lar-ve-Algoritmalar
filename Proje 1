@@ -1,1 +1,31 @@
+[22,27,16,2,18,6] -> Insertion Sort
 
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+=> Birinci sayı yani 22 yerinde kalır: 
+22,27,16,2,18,6
+=> İkinci sayı yani 27, 22'den büyük olduğu için sıralamada bir değişiklik yapılmaz: 
+22,27,16,2,18,6
+=> Üçüncü sayı yani 16, 27'den küçüktür; bu yüzden 27'nin soluna (önüne) kaydırılır. Daha sonra 16, 22'den de küçük olduğu için tekrar sola, 22'nin önüne kaydırılır: 
+16,22,27,2,18,6
+=> Dördüncü sayı yani 2, 27'den küçük olduğu için sola kaydırılır. 22'den de küçük olduğu için tekrar sola kaydırılır. 16'dan da küçük olduğu için yer değiştirilir: 
+2,16,22,27,18,6
+=> Beşinci sayı yani 18, 27'den küçük olduğu için sola kaydırılır. 22'den de küçük olduğu için tekrar sola kaydırılır. 16'dan büyük olduğu için yerinde kalır:
+2,16,18,22,27,6
+=> Sonuncu sayı yani 6, 27'den küçüktür kaydırılır. 22'den de küçüktür tekrar kaydırılır. 18'den de küçüktür, kaydırılır. 16'dan da küçüktür kaydırılır. 2'den büyük olduğu için yerinde kalır:
+2,6,16,18,22,27
+
+=> 2,6,16,18,22,27 <=
+
+Big-O gösterimini yazınız:
+Big-O= O(N^2)
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+=> Dizi sıralandıktan sonra (2,6,16,18,22,27) 18 sayısı "Average Case" in kapsamına girer. Çünkü Average Case'de istenilen sayı ortada bulunur. 
+
+=> [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+   1.adım => 7,3,5,8,2,9,4,15,6 
+   2.adım => 3,7,5,8,2,9,4,15,6
+   3.adım => 3,5,7,8,2,9,4,15,6
+   4.adım => 3,5,7,2,8,9,4,15,6
+   5.adım => 3,5,2,7,8,9,4,15,6
